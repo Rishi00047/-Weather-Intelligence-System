@@ -1,0 +1,70 @@
+SMART MARITIME NAVIGATION SYSTEM - INSTALLATION GUIDE
+-----------------------------------------------------
+
+SYSTEM REQUIREMENTS:
+- Python 3.8 or higher
+- Internet connection (for weather API)
+
+---
+
+STEP 1: INSTALL PYTHON DEPENDENCIES
+
+Open terminal or command prompt and run:
+
+pip install flask
+pip install folium
+pip install requests
+
+---
+
+STEP 2: ADD API KEY
+
+1. Go to: https://openweathermap.org/api
+2. Create a free account
+3. Get your API key
+4. Open config.py
+5. Replace:
+   API_KEY = "YOUR_OPENWEATHER_API_KEY"
+
+---
+
+STEP 3: RUN THE PROJECT
+
+Run the main application:
+
+python app.py
+
+---
+
+STEP 4: OPEN IN BROWSER
+
+Open:
+
+http://127.0.0.1:5000/
+
+---
+
+STEP 5: VIEW OUTPUT
+
+- Route is calculated using Dijkstra’s Algorithm
+- Weather data is fetched from API
+- Risk level is displayed
+- Map is generated as route_map.html
+
+---
+
+TROUBLESHOOTING:
+
+- If "module not found":
+  run pip install again
+
+- If API fails:
+  check internet connection and API key
+
+- If Flask doesn't run:
+  ensure Python is added to PATH
+
+---
+
+DONE
+Project successfully set up and running.
